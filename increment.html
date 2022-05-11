@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Increment/Decrement</title>
+</head>
+
+<script>
+    var counterVal = 0; 
+
+function incrementClick() {
+    updateDisplay(++counterVal);
+}
+function decrementClick() {
+    updateDisplay(--counterVal);
+    {
+        if (counterVal == -1) {
+            alert("APENAS QUANTIDADES ACIMA DE 0");
+            updateDisplay(counterVal = 0);
+        }
+    }
+}
+function updateDisplay(val) {
+    document.getElementById("counter-label").innerHTML = val;
+}
+
+
+
+</script>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+.corpo {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+
+.container {
+    display: flex;
+    border: 1px solid black;
+    max-width: 150px;
+    min-width: 150px;
+    border-radius: 3px;
+    border: unset;
+    background-color: rgb(233, 231, 231);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+</style>
+
+<body>
+    <div class="corpo">
+        <div class="container">
+            <div class="menos" id="menos" onclick="decrementClick()"><img src="./img/menos.png" width="22px" alt="">
+            </div>
+            <div class="numero" id="counter-label">0</div>
+            <div class="mais" id="mais" onclick="incrementClick()"><img src="./img/mais.png" width="22px" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>
