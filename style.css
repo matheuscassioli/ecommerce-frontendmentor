@@ -63,6 +63,10 @@ hr {
     margin: auto;
 }
 
+.hr2 {
+    display: none;
+}
+
 .menu-icon {
     vertical-align: middle;
     display: none;
@@ -77,7 +81,7 @@ hr {
 }
 
 .menus p a {
-    color: rgb(77, 65, 65);
+    color: rgb(29, 22, 22);
     text-decoration: none;
 }
 
@@ -110,6 +114,11 @@ hr {
     cursor: pointer;
 }
 
+.img-mincar2 {  
+    transition: all .1s ease-in;
+    filter: invert(1);
+}
+
 .second-section {
     width: 100%;
     height: 70vh;
@@ -139,6 +148,10 @@ hr {
     width: 70%;
     height: 80%;
 }
+.big-img-top2{
+    display: none;
+}
+
 
 .big-img-top img {
     width: 100%;
@@ -173,6 +186,10 @@ hr {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.right-side2 {
+    display: none;
 }
 
 .right-side>.right-conteudo {
@@ -345,10 +362,15 @@ hr {
     }
 
     .menu-icon {
+        width: 30px;
         display: block;
         cursor: pointer;
         margin-left: 10px;
         transition: all 1s;
+    }
+
+    .menu-icon2 {
+        filter: invert(1);
     }
 
     .menu-icon:hover {
@@ -387,8 +409,7 @@ hr {
         width: 50%;
         height: 100%;
         position: fixed;
-        background-color: rgba(223, 130, 130, 0.6);
-        border-radius: 10px 10px 10px 10px;
+        background-color: white;
         min-width: 120px;
         top: 100px;
         display: unset;
@@ -397,7 +418,6 @@ hr {
     .menus {
         display: block;
         margin-left: 20px;
-        margin-top: px;
         line-height: 35px;
         font-size: 17px
     }
@@ -477,6 +497,10 @@ hr {
         flex-direction: column;
     }
 
+    .right-side2 {
+        display: none;
+    }
+
     .sneaker-company {
         width: 100% !important;
     }
@@ -499,21 +523,24 @@ hr {
     .big-img-top {
         width: 100% !important;
     }
+
     .sale1 {
         width: 100%;
-        display: flex; 
+        display: flex;
         align-items: center;
 
     }
-    .price{
+
+    .price {
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         padding-top: unset;
     }
-    .testando{
-        display: flex; 
+
+    .testando {
+        display: flex;
 
     }
 }
